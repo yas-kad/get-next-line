@@ -6,17 +6,20 @@
 /*   By: yait-kad <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 21:52:05 by yait-kad          #+#    #+#             */
-/*   Updated: 2019/11/15 18:01:06 by yait-kad         ###   ########.fr       */
+/*   Updated: 2019/11/16 18:04:55 by yait-kad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef	__GET_NEXT_LINE_H
-# define	__GET_NEXT_LINE_H
-# define BUFFER_SIZE 6
+# define __GET_NEXT_LINE_H
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
+
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 10000000
+#endif
 
 char	*ft_strdup(const char *src);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
