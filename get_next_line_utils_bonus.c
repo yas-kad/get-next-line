@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yait-kad <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 22:07:33 by yait-kad          #+#    #+#             */
-/*   Updated: 2019/11/15 18:00:56 by yait-kad         ###   ########.fr       */
+/*   Updated: 2019/11/17 20:25:49 by yait-kad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
-size_t ft_strlen(char const *s)
+size_t		ft_strlen(char const *s)
 {
 	size_t	i;
 
@@ -22,7 +22,7 @@ size_t ft_strlen(char const *s)
 	return (i);
 }
 
-char	*ft_strdup(const char *src)
+char		*ft_strdup(const char *src)
 {
 	char	*str;
 	int		i;
@@ -43,7 +43,7 @@ char	*ft_strdup(const char *src)
 	return (str);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char		*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*dest;
 	unsigned int	i;
@@ -72,7 +72,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (dest);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char		*ft_strjoin(char *s1, char *s2)
 {
 	char	*s;
 	int		i;
@@ -100,9 +100,10 @@ char	*ft_strjoin(char *s1, char *s2)
 	s[i] = '\0';
 	return (s);
 }
-char	*ft_strchr(char *c1, int c2)
+
+char		*ft_strchr(char *c1, int c2)
 {
-	int	index;
+	int		index;
 	size_t	len;
 
 	index = 0;

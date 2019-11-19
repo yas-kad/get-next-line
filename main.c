@@ -13,6 +13,7 @@ int		main(int ac, char **av)
 	{
 		printf ("%d, L[%i], || %s || \n", r, i, line);
 		i++;
+		free(line);
 	}
 	printf("\n%d",r);
 	return 0;
